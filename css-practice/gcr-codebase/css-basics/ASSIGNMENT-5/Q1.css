@@ -1,0 +1,79 @@
+/* Basic page settings */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+    min-height: 100vh;
+
+    /* Flexbox keeps footer at bottom */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Fixed header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #222;
+    color: white;
+    padding: 1em;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Navigation */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/* Main section */
+main {
+    flex: 1;
+    margin-top: 150px;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    min-height: 60vh;
+}
+
+/* Profile image */
+main img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Bio heading */
+main h2 {
+    font-size: 2em;
+}
+
+/* Bio paragraph */
+main p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}

@@ -1,0 +1,93 @@
+/* Page styling */
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+/* Main heading */
+h1 {
+    color: #222;
+    margin-bottom: 40px;
+}
+
+/* 
+   Flexbox is used to arrange
+   three cards in one row.
+*/
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* 
+   Common card styling
+   using the CSS Box Model.
+*/
+.card {
+    flex: 1;
+    padding: 25px;
+    margin: 10px;
+    background-color: white;
+
+    /* Border */
+    border: 2px solid black;
+
+    /* Rounded corners */
+    border-radius: 12px;
+
+    /* Shadow effect */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+    /* Equal height */
+    min-height: 200px;
+
+    /* Include padding and border in size */
+    box-sizing: border-box;
+}
+
+/* 
+   Highlight Team Lead card
+   with different background color
+   and different border style.
+*/
+.leader {
+    background-color: #fff3cd;
+    border: 4px dashed #ff9800;
+}
+
+/* Card headings */
+.card h2 {
+    color: #222;
+}
+
+.card h3 {
+    color: #555;
+}
+
+/* Card description */
+.card p {
+    color: #333;
+    line-height: 1.5;
+}
+
+/* 
+   Responsive layout:
+   Below 600px, cards become
+   a single column.
+*/
+@media (max-width: 600px) {
+
+    .team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        flex: none;
+    }
+}

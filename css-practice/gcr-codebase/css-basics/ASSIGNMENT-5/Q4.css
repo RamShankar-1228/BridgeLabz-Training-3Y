@@ -1,0 +1,67 @@
+/* Page styling */
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #1e3a5f;
+    color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0 0 10px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* Article */
+article {
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+}
+
+/* Paragraph spacing */
+article p {
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+/* First letter of every paragraph */
+article p::first-letter {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* First line of every paragraph */
+article p::first-line {
+    font-weight: bold;
+}
+
+/* Highlighted words */
+mark {
+    background-color: #ffd54f;
+    padding: 2px 5px;
+}
+
+/* Blockquote styling */
+blockquote {
+    margin: 30px 0;
+    padding: 20px;
+    border-left: 6px solid #1e3a5f;
+    background-color: #e8f1fa;
+    font-style: italic;
+    font-size: 20px;
+}
