@@ -1,0 +1,66 @@
+body {
+    background: #f5f5f5;
+    margin: 0;
+    padding: 40px;
+}
+
+article {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 35px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.intro {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.serif {
+    font-family: Georgia, serif;
+}
+
+.sans {
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.special {
+    font-family: Verdana, sans-serif;
+}
+
+mark {
+    background: #ffd166;
+    color: #333;
+}
+
+strong {
+    color: #d62828;
+}
+
+em {
+    color: #457b9d;
+}
+
+p::first-letter {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.intro::first-line {
+    letter-spacing: 1px;
+}

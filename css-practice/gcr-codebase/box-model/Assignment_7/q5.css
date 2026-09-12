@@ -1,0 +1,56 @@
+/* Attribute selector */
+input[type="text"] {
+    padding: 12px;
+    border: 2px solid #555;
+}
+
+/* Attribute selector using prefix */
+a[href^="https"] {
+    color: green;
+}
+
+/* Pseudo-class :hover */
+a:hover {
+    color: red;
+}
+
+/* Pseudo-class :focus */
+input:focus {
+    border-color: blue;
+    outline: none;
+}
+
+/* Pseudo-class :nth-child() */
+li:nth-child(2) {
+    background: #ddd;
+}
+
+/* Pseudo-element ::before */
+h1::before {
+    content: "★ ";
+}
+
+/* Pseudo-element ::after */
+h1::after {
+    content: " ★";
+}
+
+/* Descendant combinator */
+.container p {
+    color: #333;
+}
+
+/* Child combinator > */
+.content > p {
+    padding: 8px;
+}
+
+/* Adjacent sibling combinator + */
+.content p + p {
+    border-top: 2px solid #999;
+}
+
+/* General sibling combinator ~ */
+.content p ~ span {
+    color: purple;
+}

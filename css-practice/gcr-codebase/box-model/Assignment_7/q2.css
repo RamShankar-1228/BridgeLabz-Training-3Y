@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.box {
+    padding: 20px;
+    text-align: center;
+    overflow: auto;
+}
+
+.box1 {
+    width: 180px;
+    height: 150px;
+    background: #d6e4ff;
+}
+
+.box2 {
+    width: 50%;
+    height: 30vh;
+    min-height: 150px;
+    background: #d8f3dc;
+}
+
+.box3 {
+    width: 20em;
+    height: 12em;
+    max-width: 300px;
+    min-height: 180px;
+    overflow: auto;
+    background: #ffe5d9;
+}

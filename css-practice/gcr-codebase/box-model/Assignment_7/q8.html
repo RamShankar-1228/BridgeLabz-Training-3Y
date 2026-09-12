@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <link rel="stylesheet" href="q8.css">
+</head>
+<body>
+
+    <h1>CSS Box Model Exploration</h1>
+
+    <div class="models">
+
+        <div class="demo">
+            <div class="margin-layer">
+                <div class="border-layer">
+                    <div class="padding-layer">
+                        <div class="content-layer">
+                            Content
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p>Margin → Border → Padding → Content</p>
+        </div>
+
+        <div class="size-demo content-box">
+            <h2>Content-box</h2>
+            <p>Default box-sizing model</p>
+        </div>
+
+        <div class="size-demo border-box">
+            <h2>Border-box</h2>
+            <p>Includes padding and border in width</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
