@@ -1,0 +1,66 @@
+/* Element selector */
+p {
+    font-size: 18px;
+}
+
+/* Class selector */
+.highlight {
+    background: #ffd166;
+    padding: 10px;
+}
+
+/* ID selector */
+#special {
+    color: #d62828;
+    font-weight: bold;
+}
+
+/* Attribute selector */
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #0077b6;
+}
+
+/* Attribute selector for links */
+a[href^="https"] {
+    color: green;
+}
+
+/* Descendant combinator */
+.content p {
+    margin: 10px;
+}
+
+/* Child combinator > */
+.content > p {
+    background: #d9ed92;
+}
+
+/* Adjacent sibling combinator + */
+.content p + p {
+    border-left: 4px solid #0077b6;
+    padding-left: 10px;
+}
+
+/* General sibling combinator ~ */
+.content p ~ p {
+    font-style: italic;
+}
+
+/* List styling */
+.content li {
+    margin: 8px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+
+/* Page spacing */
+.container {
+    padding: 30px;
+}

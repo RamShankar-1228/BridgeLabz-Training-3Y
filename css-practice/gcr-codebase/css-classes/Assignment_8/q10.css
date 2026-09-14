@@ -1,0 +1,124 @@
+/* Apply border-box to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Basic page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    text-align: center;
+    background: #222;
+    color: white;
+}
+
+/* Main uses Flexbox */
+main {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Main card */
+.card {
+    width: 700px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px #aaa;
+}
+
+/* Small image */
+.card img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+}
+
+/* Content area */
+.content {
+    flex: 1;
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Form fields */
+input {
+    padding: 11px;
+    border: 1px solid #888;
+    border-radius: 7px;
+}
+
+/* Focus effect */
+input:focus {
+    outline: 3px solid #90e0ef;
+    border-color: #0077b6;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: 1px solid #0077b6;
+    border-radius: 7px;
+    background: #0077b6;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+button:hover {
+    background: #023e8a;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+
+/* Responsive layout */
+@media (max-width: 700px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+}

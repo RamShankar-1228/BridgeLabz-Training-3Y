@@ -1,0 +1,51 @@
+/* Basic page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f2f2f2;
+    padding: 40px;
+}
+
+/* Flexbox centers the boxes */
+.comparison {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Common box styling */
+.box {
+    width: 300px;
+    height: 220px;
+    padding: 30px;
+    border: 10px solid #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Default content-box */
+.default-box {
+    box-sizing: content-box;
+    background: #ffd6a5;
+}
+
+/* Border-box */
+.border-box {
+    box-sizing: border-box;
+    background: #bde0fe;
+}
+
+/* Responsive layout */
+@media (max-width: 700px) {
+    .comparison {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 90%;
+    }
+}

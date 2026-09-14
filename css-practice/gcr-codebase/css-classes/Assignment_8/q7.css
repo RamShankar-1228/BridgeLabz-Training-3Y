@@ -1,0 +1,72 @@
+/* Page background gradient */
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #d9eafd, #f7d9e3);
+}
+
+/* Card-like container */
+.card {
+    width: 400px;
+    max-width: 90%;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px #aaa;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+}
+
+/* Form uses Flexbox */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Search and dropdown */
+input,
+select {
+    padding: 12px;
+    border: 1px solid #999;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 0 2px 5px #ddd;
+}
+
+/* Focus effect */
+input:focus,
+select:focus {
+    outline: 3px solid #90e0ef;
+    border-color: #0077b6;
+}
+
+/* Button container */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Buttons */
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #0077b6;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 3px 8px #aaa;
+}
+
+/* Hover effect */
+button:hover {
+    background: #023e8a;
+}
