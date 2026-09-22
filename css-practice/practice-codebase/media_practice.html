@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Two Flexbox Layout</title>
+
+    <style>
+        .container {
+            width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 5px solid black;
+
+            display: flex;
+            gap: 30px;
+        }
+
+        
+        .left-box {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .text-box {
+            border: 2px solid black;
+            padding: 20px;
+            height: 100px;
+        }
+
+        
+        .right-box {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right-box img {
+            width: 300px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .right-box img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Left Flexbox -->
+        <div class="left-box">
+
+            <div class="text-box">
+                <h2>Text Box 1</h2>
+                <p>This is the first text box.</p>
+            </div>
+
+            <div class="text-box">
+                <h2>Text Box 2</h2>
+                <p>This is the second text box.</p>
+            </div>
+
+        </div>
+
+        <!-- Right Flexbox -->
+        <div class="right-box">
+            <img src="https://economictimes.indiatimes.com/photo/70342652.cms" alt="Sample Image">
+        </div>
+
+    </div>
+
+</body>
+</html>
+```
