@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+}
+
+.principles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.principle {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+.principle h2 {
+    margin-bottom: 15px;
+}
+
+.principle p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.principle code {
+    display: block;
+    padding: 10px;
+    background-color: #eee;
+}
+
+.principle:hover {
+    background: linear-gradient(135deg, #222, #555);
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .principles {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+}
+
+.comparison {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+}
+
+.image-box {
+    flex: 1;
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.image-box img {
+    width: 100%;
+    display: block;
+    transition: filter 0.5s ease;
+}
+
+.filtered {
+    filter: brightness(60%);
+}
+
+.image-box:hover .filtered {
+    filter: none;
+}
+
+figcaption {
+    padding: 15px;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .comparison {
+        flex-direction: column;
+    }
+}
