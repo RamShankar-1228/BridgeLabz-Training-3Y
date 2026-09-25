@@ -1,0 +1,12 @@
+body {
+    background-color: #fffaf5;
+}
+
+table {
+    background-color: white;
+}
+
+figure img {
+    max-height: 400px;
+    object-fit: cover;
+}
